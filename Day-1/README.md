@@ -6,7 +6,7 @@
 print("Hello World!")
 ```
 
-I this case the 'print' has taken in 'Hello World' and the output/print statement will be Hello World!
+In this case the 'print' has taken in 'Hello World' and the output/print statement will be Hello World!
 
 - The Hello world! is in a set of parentheses put in quotes "" since they are not codes, text inbetween quotes are called **Strings**. The quotes shows the beginning and end of the characters.
 
