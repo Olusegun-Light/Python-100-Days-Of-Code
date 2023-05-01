@@ -33,12 +33,12 @@
     - int() to convert to an integer, and so one....
 
 5. Mathimatical symbols
-    Addition +
-    Subtraction -
-    Multiplication *
-    Division / -float
-    Floor Division // -int
-    Exponent **
+    - Addition +
+    - Subtraction -
+    -Multiplication *
+    -Division / float
+    -Floor Division // int
+    -Exponent **
 
     - Round numbers to the nearest whole number with round() function
 
