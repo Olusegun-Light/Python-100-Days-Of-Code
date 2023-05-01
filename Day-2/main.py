@@ -28,4 +28,5 @@ tip = total_bill * (percentage_tip/100)
 new_total = total_bill + tip
 split_bill = new_total / num_of_people
 split_bill_dec = round(split_bill, 2)
+split_bill_dec = "{:.2f}".format(split_bill)
 print(f"Each person should pay: {split_bill_dec}")
