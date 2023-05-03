@@ -13,7 +13,7 @@ In this case the 'print' has taken in 'Hello World' and the output/print stateme
 - When you have an error in your console, highlight the whole error google it and luckily you'd find your answer.
 
 2. You can print multiple statement using '\n', it indecated next line and any word after it will be put on a new line
-    So instead of 
+    So instead of, 
 
     ```
     print("Day 1 - Python Print Function")
