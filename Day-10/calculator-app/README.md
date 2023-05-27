@@ -2,4 +2,4 @@
 
 - Preview
 
-![image](preview.png)
+![image](image/preview.png)
