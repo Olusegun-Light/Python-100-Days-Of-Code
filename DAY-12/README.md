@@ -41,7 +41,7 @@
 
     increase_enimies()
     print(f"enimies outside function: {enemies}")
-        ```
+    ```
 
     - Instead of modifying you can use the retun statement 
 
