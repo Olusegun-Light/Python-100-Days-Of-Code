@@ -1,4 +1,5 @@
 # Python-100-Days-Of-Code
-í¾Š Yeee! í¾Š It's 100DayOfPythonCode í¸
+
+ğŸŠ Yeee! ğŸŠ It's 100DayOfPythonCode ğŸ˜
 
 ![alt text](img/img.png)
