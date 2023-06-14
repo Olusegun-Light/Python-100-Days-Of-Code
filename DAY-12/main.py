@@ -9,14 +9,14 @@ def increase_enimies():
 increase_enimies()
 print(f"enimies outside function: {enemies}")
 
-# Local Scpoe
+# Local Scope
 
 def drink_potion():
     potion_strength = 2
     print(potion_strength)
 
 drink_potion()
-# print(potion_strength) ####will give an error, potion_strenght not defined
+# print(potion_strength) ####will give an error, potion_strength not defined
 
 # Global Scope
 
