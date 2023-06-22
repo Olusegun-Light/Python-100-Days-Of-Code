@@ -1,30 +1,32 @@
 # Python Functions & Karel
 
-1. Functions 
-    Python has alot of buit in function we use regularly eg the print() function, the len() function. Read on more python functions [here](https://docs.python.org/3/library/functions.html).
-    
-    - If you want to build in your own function you start out with a key word which is called 'def' , then add the name of your function.
+This repository contains examples of Python functions and an introduction to the concept of while loops.
 
-    ``` 
-    def my_function():
-        Do this
-        Then do this
-        Finally do this
-    ```
+## Functions
 
-    Note: The parentheses is what differentiate a function from a variable
+Python has a lot of built-in functions that are commonly used, such as the `print()` function and the `len()` function. You can learn more about Python functions in the [Python documentation](https://docs.python.org/3/library/functions.html).
 
-2. While loop
+If you want to create your own function, you start with the keyword `def` followed by the name of your function. Here's an example:
 
-    ```
-    while something_is_true:
-        Do this
-        Then do this
-        Finally do this
-    ```
+```python
+def my_function():
+    # Do something
+    print("Hello")
+    print("Bye")
+```
 
-    - For loops are used when you want to iterate over something and you need to do something with each thing that you are iterating over.
+Note that the parentheses after the function name differentiate it from a variable.
 
-    - While loops will keep running till the condition returns a false. If you have a condition has never been false,then you have something we call an infinite loop
+## While Loop
 
-Test out your understanding of while loop [here](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Home%201&url=worlds%2Ftutorial_en%2Fhome1.json)
+While loops are used when you want to repeatedly execute a block of code as long as a certain condition is true. Here's the basic syntax:
+
+```python
+while condition:
+    # Do something
+    print("Looping...")
+```
+
+While loops continue running until the condition evaluates to false. Be careful to avoid infinite loops where the condition never becomes false.
+
+You can test your understanding of while loops using the [Karel programming environment](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Home%201&url=worlds%2Ftutorial_en%2Fhome1.json).

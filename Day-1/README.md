@@ -8,7 +8,7 @@ Printing in Python is accomplished using the print() function. The print() funct
 
 Example:
 
-```
+```python
 print("Hello World!")
 ```
 
@@ -23,7 +23,7 @@ To print multiple statements on separate lines, you can use the newline characte
 
 Example:
 
-```
+```python
 print("Day 1 - Python Print Function\nThe function is declared like this:\nprint('what to print')")
 ```
 
@@ -35,14 +35,10 @@ String concatenation involves merging separate strings of characters into one. I
 
 Example:
 
-```
+```python
 print("Git" + "Hub")
-```
 
-Output:
-
-```
-GitHub
+# Output: GitHub
 ```
 
 The two strings `"Git"` and `"Hub"` are concatenated to form the word "GitHub".
@@ -53,7 +49,7 @@ The `input()` function is used to gather information from the user. It prompts t
 
 Example:
 
-```
+```python
 input("What is your name?")
 ```
 
@@ -65,7 +61,7 @@ Variables are used to store data for later use within the code. In Python, you c
 
 Example:
 
-```
+```python
 name = input("What is your name?")
 ```
 
@@ -77,7 +73,7 @@ This exercise demonstrates the usage of the concepts mentioned above. It prompts
 
 Example:
 
-```
+```python
 print("Welcome to the Band Name Generator")
 
 city_name = input("Which city did you grow up in?\n")

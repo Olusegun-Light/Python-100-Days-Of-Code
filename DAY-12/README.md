@@ -1,69 +1,74 @@
 # Scope & Number Guessing Game
 
-1. Local Scope exist within functions
-   -When you create a new var or a new func inside another func it's only accessible inside that function
+This module explores the concept of scope in Python and provides an example of a Number Guessing Game.
 
-   ```
-   def drink_potion():
-   potion_strength = 2
-   print(potion_strength)
+## Scope Overview
 
-   drink_potion()
-   ```
+1.  **Local Scope** : Variables defined within a function are accessible only inside that function. They are not accessible outside the function.
 
-2. Global scope
+Example:
 
-   - The difference between global scope and local scope is where you define or where you create your variables or your functions. Its available globally because it was defined at the top level of the file
+```python
+def drink_potion():
+    potion_strength = 2
+    print(potion_strength)
 
-   ```
-   player_heath = 10
+drink_potion()
+```
 
-   def drink_potion():
-       potion_strength = 2
-       print(player_heath)
+2. **Global Scope**: Variables defined at the top level of a file are accessible globally throughout the program.
 
+Example:
 
-   drink_potion()
-   ```
+```python
+enemies = 1
 
-3. Block scope
-   -There is no such thing as block scope in python.
+def increase_enemies():
+    global enemies
+    enemies += 2
+    print(f"Enemies inside function: {enemies}")
 
-4. Modifying global scope
-   -Don't try to modify a global scope within a function that has a local scope
+increase_enemies()
+print(f"Enemies outside function: {enemies}")
+```
 
-   ```
-   enemies = 1
+3. **Block Scope**: Unlike some other programming languages, Python does not have block scope. Variables defined within loops or if statements are still accessible outside of them.
 
-   def increase_enemies():
-       global enemies
-       enemies += 2
-       print(f"enemies inside function: {enemies}")
+4. **Modifying Global Scope**: To modify a global variable within a function, you need to use the `global` keyword or return the modified value and assign it to the global variable.
 
-   increase_enemies()
-   print(f"enemies outside function: {enemies}")
-   ```
+Example:
 
-   - Instead of modifying you can use the return statement
+```python
+enemies = 1
 
-   ```
-   enemies = 1
+def increase_enemies():
+    global enemies
+    enemies += 2
+    print(f"Enemies inside function: {enemies}")
 
-   def increase_enemies():
-       print(f"enemies inside function: {enemies}")
-       return enemies + 2
+increase_enemies()
+print(f"Enemies outside function: {enemies}")
+```
 
-   enemies = increase_enemies()
-   print(f"enemies outside function: {enemies}")
+5. **Global Constants**: Constants are variables that are not meant to be changed. In Python, they are typically named in uppercase to indicate their constant nature.
 
-   ```
+Example:
 
-5. Global constants
+```python
+PI = 3.14259
+GITHUB_USERNAME = "Olusegun Light"
+```
 
-   - Global constants are variable you define and never planning on changing it ever again
-   - To differentiate it from regular function you change to name to all upper case
+## Number Guessing Game
 
-   ```
-   PI = 3.14259
-   GIT_HUB_USER_NAME = Olusegun Light
-   ```
+The Number Guessing Game is an interactive game where the player tries to guess a random number chosen by the computer. The game provides feedback on whether the guess is too high or too low until the player guesses the correct number.
+
+## How to Play
+
+1. The computer selects a random number between 1 and 100.
+2. The player is prompted to guess a number.
+3. The game provides feedback on whether the guess is too high or too low.
+4. The player continues guessing until the correct number is guessed.
+5. The game displays the number of attempts taken to guess correctly.
+
+Enjoy playing the Number Guessing Game and have fun!

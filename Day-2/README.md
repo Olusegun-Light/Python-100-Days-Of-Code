@@ -1,53 +1,101 @@
 # Understanding Data Types and How to Manipulate Strings
 
+This README provides an overview of data types in Python and covers concepts such as integers, floats, booleans, type checking, type conversion, mathematical symbols, and f-strings. It also includes an exercise example of a Tip Calculator.
+
 ## Data Types
 
-1. Integer: Whole number positive or negative, numbers without decimal places
-    To declare an integer, unlike string needing the double quotes you just write the numbers.
-    Example 123, 3490
+1. Integer: Integer represents whole numbers, either positive or negative, without decimal places.
 
-    - Sub-scripting is a method of pulling a perticular element from a string
-        Example; If you have a string "Hello" you can get any element from the string
+Example:
 
-        ```
-        print('Hello'[0])
+```
+123
+3490
+```
 
-        >H
-        ```
+- Subscripting: Subscripting is a method of accessing a particular element from a string. You can use square brackets `[]` with the index position to retrieve a specific element.
 
-        ```
-        print('Hello'[-1])
+Example:
 
-        >0
-        ```
+```python
+print('Hello'[0])
+# Output: H
 
-2. Float: They are numbers with decimal places also called floating point number.
-    Example 3.12 9.8
+print('Hello'[-1])
+# Output: o
+```
 
-3. Boolen: It has only two possiple values. True or False
+2. Float: Float represents numbers with decimal places, also known as floating-point numbers.
 
-4. Type checking: Use the type() function to know what type of data
-    - Type conversion/Casting: Change one perticular data type to another
-    -type() used to check the type of data
-    - str() to convert to a string
-    - int() to convert to an integer, and so one....
+Example:
 
-5. Mathimatical symbols
-    - Addition +
-    - Subtraction -
-    -Multiplication *
-    -Division / float
-    -Floor Division // int
-    -Exponent **
+```
+3.12
+9.8
+```
 
-    - Round numbers to the nearest whole number with round() function
+3. Boolean: Boolean has only two possible values: `True` or `False`.
 
-    - F-Strings: new string formatting mechanism known as Literal String Interpolation. The idea behind f-strings is to make string interpolation simpler. 
-        - To implement it you fut an f infront of the string
+4. Type Checking and Type Conversion (Casting):
 
-        ```
-        score = 0 
-        height = 1.8
-        isWinning = True
-        print(f"your score is {score}, your height is {height} and the probability of you winning is {isWinning}" )
-        ``` 
+- Use the `type()` function to check the type of data.
+- Use `str()` to convert to a string.
+- Use `int()` to convert to an integer, and so on.
+
+5. Mathematical Symbols:
+
+- Addition: `+`
+
+- Subtraction: `-`
+
+- Multiplication: `*`
+
+- Division: `/` (float division)
+
+- Floor Division: `//` (integer division)
+
+- Exponent: `**`
+
+- Rounding Numbers: Use the `round()` function to round numbers to the nearest whole number.
+
+- F-Strings (Literal String Interpolation): F-strings provide a simpler way to format strings by embedding expressions inside string literals. To use f-strings, prefix the string with the letter `f` and enclose expressions within curly braces `{}`.
+
+Example:
+
+```python
+score = 0
+height = 1.8
+isWinning = True
+print(f"Your score is {score}, your height is {height}, and the probability of you winning is {isWinning}")
+```
+
+## Exercise: Tip Calculator
+
+This exercise demonstrates the usage of the concepts mentioned above. It calculates the amount each person should pay, including the tip, when splitting a bill among multiple people.
+
+Example:
+
+```python
+print("Welcome to the Tip Calculator")
+
+total_bill = float(input("What was the total bill? $"))
+percentage_tip = float(input("What percentage tip would you like to give? 10, 12, or 15? "))
+num_of_people = int(input("How many people will split the bill? "))
+
+tip = total_bill * (percentage_tip / 100)
+new_total = total_bill + tip
+split_bill = new_total / num_of_people
+split_bill_dec = round(split_bill, 2)
+
+print(f"Each person should pay: {split_bill_dec}")
+```
+
+This code snippet prompts the user for the total bill, the percentage tip, and the number of people splitting the bill. It calculates the tip, adds it to the total bill, and divides the new total among the specified number of people. The final amount each person should pay is displayed.
+
+# Conclusion
+
+This README provides an understanding of data types in Python, including integers, floats, and booleans. It also covers type checking, type conversion, mathematical symbols, and f-strings for string formatting. Feel free to modify and experiment with the code examples to explore different functionalities.
+
+If you have any questions or encounter any issues, please feel free to reach out.
+
+Happy coding!
