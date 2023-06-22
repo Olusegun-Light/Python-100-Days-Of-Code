@@ -1,6 +1,6 @@
 # 100 Days of Python Code
 
-![100 Days of Python Code](img/img2.jpg)
+<p align="center"> ![100 Days of Python Code](img/img2.jpg) </p>
 
 Welcome to the 100 Days of Python Code repository! This project is inspired by the "100 Days of Code" challenge and aims to help you strengthen your Python programming skills over the course of 100 days. Whether you're a beginner or an experienced developer, this project provides a structured learning path and coding exercises to improve your Python proficiency.
 
