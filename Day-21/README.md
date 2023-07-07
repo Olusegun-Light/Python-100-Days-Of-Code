@@ -27,6 +27,7 @@ The game consists of the following Python files:
 - `snake.py`: Defines the `Snake` class responsible for creating and managing the snake's behavior.
 - `food.py`: Defines the `Food` class responsible for creating and refreshing the food item.
 - `score_board.py`: Defines the `Scoreboard` class responsible for keeping track of the score and displaying it on the screen.
+- `data.txt`: Where high score is saved.
 
 Feel free to explore the code files for more details on how the game is implemented.
 
