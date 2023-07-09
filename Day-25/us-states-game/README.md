@@ -1,6 +1,6 @@
 # U.S. States Guessing Game
 
-[img](img.png)
+![img](img.png)
 
 This repository contains a Python script for a U.S. States Guessing Game. The game utilizes the `turtle` and `pandas` libraries to create an interactive map of the United States. The code is organized as follows:
 
