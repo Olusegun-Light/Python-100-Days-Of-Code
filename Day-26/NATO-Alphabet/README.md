@@ -8,6 +8,14 @@ The NATO phonetic alphabet is a spelling alphabet used by international aviation
 
 This script takes a user input word and converts it into its NATO phonetic alphabet representation. It utilizes a CSV dataset containing the mapping between letters and their corresponding words.
 
+## Installation
+
+Before running the script, ensure you have the required dependencies. You can install them using:
+
+    ```bash
+    pip install pandas
+    ```
+
 ## How to Use
 
 1. Make sure you have the required `nato_phonetic_alphabet.csv` file in the same directory as your script.
@@ -36,6 +44,16 @@ The dataset is structured as follows:
 | B      | Bravo   |
 | C      | Charlie |
 | ...    | ...     |
+
+## Script Explanation
+
+1. The script uses the `pandas` library to read the CSV file containing the NATO phonetic alphabet data.
+2. It creates a dictionary `phonetic_dict` mapping letters to their corresponding phonetic codes.
+3. The `generate_phonetic()` function prompts the user to input a word, converts it to uppercase, and attempts to generate the phonetic representation.
+4. If a letter is not found in the `phonetic_dict`, a `KeyError` exception is caught, and a message is printed.
+5. If the input consists only of letters, the phonetic representation is printed.
+
+Feel free to experiment with different words and explore the phonetic alphabet representation.
 
 ## Requirements
 
