@@ -1,5 +1,0 @@
-OWM_Endpoint = "https://api.openweathermap.org/data/2.5/weather"
-api_key = "cf7129d11abded1570af6697f7f60115"
-
-account_sid = 'AC187f3b510c29c018a8f8f7a9d3d44cfd'
-auth_token = 'f3a626f43ce834e272ab4a5a2c44d73a'
